@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import { createStore } from 'redux';
 import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import * as serviceWorker from './serviceWorker';
 import countReducer from './reducers/countReducer';
+import ReactDOM from 'react-dom';
+import App from './App';
+import './index.css';
 
 const store = createStore(
   countReducer,
